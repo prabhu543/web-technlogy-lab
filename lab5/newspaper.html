@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+            *{
+                margin:0;
+                padding:0;
+                box-sizing:content-box;
+            }
+            body{
+                padding:20px;
+                font-family:'Arial',sans-serif;
+                color:black;
+                display:block;
+                flex-direction:row;
+                min-height:100vh;
+            }
+            header{
+                margin-bottom:30px;
+                border-radius: 10px;
+                align-items: center;
+                background-color: blue;
+                color: whitesmoke;
+                padding: 20px;
+                display: flex;
+                justify-content: space-between;
+                text-align: center;
+            }
+            header a{
+                font-size:25px;
+                font-weight:bold;
+                color: white;
+                text-decoration: none;
+            }
+            nav{
+                display: flex;
+                gap: 50px;
+            }
+            nav a{
+                font-size:10px;
+                color: black;
+                text-decoration: none;
+                font-weight:  bold;
+            }
+            nav a:hover{
+                text-decoration: underline;
+            }
+            .content{
+                display: flex;
+                justify-content: space-between;
+                margin: auto;
+                padding: 20px 0;
+                gap:20px;
+                position: relative;
+            }
+            .main-content{
+                cursor:pointer;
+                display:grid;
+                grid-template-columns:repeat(auto-fill,minmax(300px,1fr));
+                gap:20px;
+                background-color:white;
+                border-radius:12px;
+                padding:25px;
+            }
+            aside{
+                border:1px solid brown;
+                padding:2px;
+                width:500px;
+                border-radius:8px;
+                position:sticky;
+                top:20px;
+                color:red;
+                right: 0;
+                margin-left: 18px;
+            }
+            .related-news h3{
+                text-align: center;
+                border-radius: 7px;
+                padding: 8px;
+                background: black;
+                color: #fff;
+                margin-bottom: 15px;
+            }
+            .related-news ul{
+                list-style: inside;
+                padding: 7px;
+                margin: 0;
+            }
+            .related-news li{
+                margin-bottom: 12px;
+            }
+            .related-news a{
+                text-decoration: none;
+                color: blueviolet;
+                font-weight: bold;
+            }
+            .related-news a:hover{
+                text-decoration: underline;
+            }
+            footer{
+                border-radius: 18px;
+                background: brown;
+                color: #fff;
+                padding: 20px;
+                font-weight: 500;
+                text-align: center;
+                margin-top: auto;
+                font-size: 18px;
+            }
+            article{
+                background-color: #fff;
+                padding: 15px;
+                border-radius: 7px;
+                color: black;
+            }
+            figure{
+                background-color: whitesmoke;
+                padding: 10px;
+                border: 1px solid gray;
+                border-radius: 8px;
+                text-align: center;
+                margin: 0;
+            }
+            figcaption{
+                font-size: 1.4em;
+                color: palevioletred;
+            }
+            img{
+                max-width: 100%;
+                height: auto;
+                border-radius: 8px;
+            }
+            section{
+                padding: 20px;
+                width: 100%;
+                background-color: #fff;
+                border-radius: 8px;
+            }
+            section h2{
+                color: #fff;
+                background: burlywood;
+                font-size: 24px;
+                border-radius: 10px;
+                text-align: center;
+                padding: 10px;
+                margin-bottom: 30px;
+            }
+            table{
+                width: 100%;
+                border-collapse: separate;
+            }
+            caption{
+                font-size: 18px;
+                margin-bottom: 10px;
+                color: royalblue;
+            }
+            thead{
+                background-color: orangered;
+                color: #fff;
+            }
+            th, td{
+                padding: 12px;
+                text-align: left;
+            }
+            th{
+                font-weight: bold;
+            }
+            tbody tr:nth-child(even){
+                background-color: violet;
+            }
+            tbody tr:hover{
+                background-color: whitesmoke;
+            }
+            @media (max-width: 600px){
+                th,td{
+                    padding: 8px;
+                    font-size: 14px;
+                }
+                caption{
+                    background-color: gray;
+                    padding: 10px;
+                    font-weight: bold;
+                    border-bottom: 2px solid powderblue;
+                    border-radius: 8px 8px 0 0;
+                    font-size: 1.2em;
+                    color: black;
+                }
+                article h2{
+                    color: blueviolet;
+                    font-size: 1.1em;
+                    margin-bottom: 12px;
+                }
+            }
+        </style>
+</head>
+<body>
+    <header>
+        <a href="#">Newspaper</a>
+
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+            <a href="#">Services</a>
+            <a href="#">Marketing</a>
+            <a href="#">Updates</a>
+        </nav>
+    </header>
+    <div class="content">
+        <main class="main-content">
+            <article>
+                <h2>Article Title 1</h2>
+                <figure>
+                    <img src="https://diplo-media.s3.eu-central-1.amazonaws.com/2024/05/google-mobile-application-samrt-phone-screen-1024x683.jpg" alt="technology">
+                    <figcaption>Google introduces compliance </figcaption>
+                </figure>
+                <p>first article</p>
+            </article>
+            <article>
+                <h2>Article Title 2</h2>
+                <figure>
+                    <img src="https://diplo-media.s3.eu-central-1.amazonaws.com/2024/05/google-mobile-application-samrt-phone-screen-1024x683.jpg" alt="technology">
+                    <figcaption>Knox expands to bolstar iot security</figcaption>
+                </figure>
+                <p>second article</p>
+            </article>
+            <article>
+                <h2>Article Title 3</h2>
+                <figure>
+                    <img src="https://diplo-media.s3.eu-central-1.amazonaws.com/2024/05/google-mobile-application-samrt-phone-screen-1024x683.jpg" alt="technology">
+                    <figcaption>Chandrasekaran pays tribute to ratan tata </figcaption>
+                </figure>
+                <p>third article</p>
+            </article>
+        </main>
+        <aside class="related-news">
+        
+            <h3>Related news</h3>
+            <ul>
+                <li><a href="#">Related news 1</a></li>
+                <li><a href="#">Related news 2</a></li>
+                <li><a href="#">Related news 3</a></li>
+            </ul>
+        </aside>
+    </div>
+    <section>
+        <h2>Recent posts</h2>
+        <div>
+            <table>
+                <caption> List of posts </caption>
+                <thead>
+                    <tr>
+                        <th>Post title</th>
+                        <th>Date</th>
+                        <th>Author</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Post 1</td>
+                        <td>2024-08-30</td>
+                        <td>author 1</td>
+                    </tr>
+                    <tr>
+                        <td>Post 2</td>
+                        <td>2024-08-29</td>
+                        <td>author 2</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+</body>
+</html>
