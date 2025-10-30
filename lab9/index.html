@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery example</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        button{
+            padding: 12px 24px;
+            margin: 10px;
+            cursor: pointer;
+            border: none;
+            border-radius: 6px;
+            font-size: 16px;
+            background: blue;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p id="para">This is existing paragraph.</p>
+        <ul id="list">
+            <li>item 1</li>
+            <li>item 2</li>
+        </ul>
+        <div class="box" id="box">Animate me!</div>
+        <button id="appendButton">Append Content</button>
+        <button id="animateButton">Animate Box</button>
+    </div>
+    <script>
+        $(document).ready(()=> {
+            $("#appendButton").click(()=> {
+                $("#para").append(` appended text. `);
+                $("#list").append(` <li> Appended List item.</li> `);
+            });
+            
+            $("#animateButton").click(()=> {
+                $("#box").stop(true , true).css({
+                    width : "100px",
+                    height:"100px",
+                    opacity:1,
+                    backgroundColor:"blue"
+                }).animate({
+                    width : "200px",
+                    height:"200px",
+                    opacity:0.5,
+                }, 1000 , () => {
+                    $(this).css("background-color", "green");
+                });
+            });
+        });
+    </script>
+</body>
+</html>
