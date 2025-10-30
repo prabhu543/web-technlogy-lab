@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AJAX EXAMPLE</title>
+</head>
+<body>
+    <h1>AJAX EXAMPLE 1</h1>
+    <div id="result"></div>
+    <button onclick="fetchData()">plain AJAX</button>
+    <script>
+        const fetchData = () => {
+            const xhttp = new XMLHttpRequest();
+            xhttp.onload = function(){
+                document.getElementById('result').innerHTML = this.responseText;
+            }
+            xhttp.open('GET', 'textfile.txt');
+            xhttp.send();
+        }
+    </script>
+</body>
+</html>
