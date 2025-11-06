@@ -1,0 +1,23 @@
+<html>
+<head>
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+    <h1>Ajax example 3</h1>
+    <div id="display"></div>
+    <input type="button" value="jQuery-getJSON" id="fetch" />
+
+    <script>
+        $(document).ready(() => {
+            $('#fetch').click( (event) => {
+                $.getJSON('data.json', (emp) =>  {
+                    $('#display').html('<p> Name: ' + emp.name + '</p>')
+                    $('#display').append('<p> Age: ' + emp.age + '</p>')
+                    $('#display').append('<p> City: ' + emp.city + '</p>')
+                })
+            })
+        })
+    </script>
+</body>
+</html>

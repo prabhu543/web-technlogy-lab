@@ -1,0 +1,20 @@
+<html>
+<head>
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+    <h1>AJAX EXAMPLE 4</h1>
+    <div id="a"></div>
+    <button onclick="parseData()">Parse Json</button>
+
+    <script>
+        const parseData = () => {
+            let txt = '{"name" : "JOHN DOE" , "age" : 30, "city" : "New York"}'
+            let obj = jQuery.parseJSON(txt)
+            document.getElementById('a').innerHTML = 
+                "Object name : " + obj.name + "<br> Object age : " + obj.age + "<br> Object city : " + obj.city
+        };
+    </script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+    <h1>AJAX EXAMPLE 2</h1>
+    <div id="output"></div>
+    <button>jQuery AJAX</button>
+    <script>
+        $(document).ready(() => {
+            $('button').click(() => {
+                $('#output').load('textfile.txt');
+            });
+        });
+    </script>
+</body>
+</html>
