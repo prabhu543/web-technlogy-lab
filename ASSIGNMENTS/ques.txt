@@ -1,0 +1,5 @@
+1. construct a website multiple web pages containing resume and bio data by using relevent html elem and appropriate styling for presntation with css/ jquery/js. host the wesite at cloud platform.
+
+
+
+2. build A WEb page with html css js jquery and php for online application/ registration form, form should accept informatioin and display on browser with frmatting/ styling upon submission on success. host

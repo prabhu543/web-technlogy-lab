@@ -1,0 +1,190 @@
+/* FONT + RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #f4f6fc;
+  color: #333;
+}
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+  background: transparent;
+  position: absolute;
+  width: 100%;
+}
+
+.logo {
+  color: white;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  color: #ffdd57;
+}
+
+/* HERO — FINAL CORRECT VERSION */
+.hero {
+  height: 100vh;
+  background: linear-gradient(135deg, #4f46e5, #6d28d9);
+  color: white;
+  padding: 20px 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+/* LEFT SIDE */
+.hero-left {
+  max-width: 600px;
+}
+
+.hero-left h1 {
+  font-size: 55px;
+  font-weight: 700;
+}
+
+.hero-left span {
+  color: #ffdd57;
+}
+
+.hero-left p {
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+/* BUTTON */
+.btn {
+  display: inline-block;
+  padding: 12px 30px;
+  background: #ffdd57;
+  color: #333;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: 0.3s;
+  margin-top: 20px;
+}
+
+.btn:hover {
+  background: white;
+}
+
+/* RIGHT SIDE — IMAGE */
+.hero-right img {
+  width: 320px;
+  height: 320px;
+  border-radius: 50%;
+  border: 6px solid #ffdd57;
+  object-fit: cover;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding-top: 130px;
+  }
+
+  .hero-right img {
+    margin-top: 25px;
+    width: 220px;
+    height: 220px;
+  }
+}
+
+/* PAGE SECTIONS */
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 120px 40px;
+}
+
+.container h2 {
+  font-size: 40px;
+  margin-bottom: 20px;
+  color: #4f46e5;
+}
+
+.container p,
+.container li {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+/* PROJECT CARD */
+.project-card {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* RESUME PAGE */
+.resume-download {
+  margin-top: 20px;
+}
+
+.pdf-frame {
+  width: 100%;
+  height: 600px;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+/* CONTACT FORM */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 600px;
+}
+
+input,
+textarea {
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid #aaa;
+  font-size: 16px;
+}
+
+button {
+  padding: 12px 20px;
+  background: #4f46e5;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #6d28d9;
+}
